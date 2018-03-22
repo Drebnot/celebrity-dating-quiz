@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Celebrity Dating Quiz</title>
+  </head>
+  <body>
+    <h1>Welcome to the Celebrity Dating Quiz!</h1>
+    <p>enter information about yourself to determine who your match is.</p>
+    <div class="container">
+      <form id="CelebMatcher">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+        <button type="submit" class="button">Find my Match!</button>
+      </form>
+
+      <div id="match">
+        <p>Your match is <span id="celeb"></span>!</p>
+      </div>
+    </div>
+  </body>
+</html>
