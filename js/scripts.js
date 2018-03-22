@@ -5,8 +5,12 @@ $(document).ready(function(){
 
     if (gender === 'male' && age < 30) {
       match = "Emma Watson";
-    } else{
+    } else if (gender === 'female' && age < 30){
       match = "Justin Beiber";
+    } else if (gender === 'male' && age >= 30){
+      match = "Bette Midler";
+    } else {
+      match = "Brad Pitt";
     }
 
     $("#celeb").text(match);
